@@ -1,0 +1,19 @@
+function oddziel(slowo) {
+	let str = slowo.split("").join(" ");
+ 	console.log(str);
+}
+oddziel("Hello world");
+
+function change(str) {
+  var newstr = "";
+  for (let i = 0; i < str.length; i++) {
+    chr = str[i];
+    if (chr === chr.toUpperCase()) {
+      newstr += chr.toLowerCase();
+    } else {
+      newstr += chr.toUpperCase();
+    }
+  }
+  console.log(newstr);
+}
+change("Hello world");
