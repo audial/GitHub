@@ -1,0 +1,86 @@
+//Check if value is even or not
+
+function isItEven(value) {
+    if (value % 2 == 0) {
+        return "Number is even";
+    }
+
+    return "Number is odd";
+}
+isItEven(6)
+
+//Using the switch function
+
+function checkJS(x) {
+    switch (x) {
+        case 'Java':
+            console.log('Hi this is Java');
+            break;
+        case 'Script':
+            console.log('Hey this is Script');
+            break;
+        case 'JavaScript':
+            console.log('Finally, it works');
+            break;
+        default:
+            console.log('Nothing here');
+    }
+}
+CheckJS('JavaScript');
+
+//A script that will take every second letter and add it to the last letter
+
+function writeEveryOtherLetter(word) {
+    let finalString = '';
+
+    for (let i = 0; i < word.length; i++) {
+        if (i % 2) {
+            finalString += word[i];
+        }
+    }
+
+    return finalString;
+}
+console.log(writeEveryOtherLetter('mamajava'));
+
+//A script that will give the sum of the numbers in the array
+
+function arraySum(array) {
+    let sum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+
+    return sum;
+}
+console.log(arraySum([1,2,3,5,2,4,5,3,423,4,23]));
+
+//A script that will give the mean of the numbers in the array
+
+function arrayAverage(array) {
+    let sum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+    }
+
+    return Math.ceil(sum / array.length);
+}
+console.log(arrayAverage(12,512,12,111,431,5,3,423,4,23]));
+
+//Find the needle in the "haystack"
+
+function findNeedle(array, whatAreWeLookingFor) {
+
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === whatAreWeLookingFor) {
+            return i;
+        }
+    }
+
+    return "Nothing here";
+}
+
+var needleIsHere = ["barn", "haystack", "needle", "cat", "horse"];
+console.log("Needle is positioned in: ", findNeedle(needleIsHere, "needle"));
